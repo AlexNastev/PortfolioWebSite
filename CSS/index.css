@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p{
+    line-height: 1.5;
+}
+
+body{
+    background-color: #135D66;
+    font-family: "Platypi", serif;
+}
+
+.nav-bar{
+    background-color: #003C43;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgb(17, 43, 37);
+}
+
+.logo{
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    color: #E3FEF7;
+}
+
+.logo h3{
+    display: flex;
+    align-items: center;
+}
+
+.logoImg{
+    width: 10vh;
+}
+
+.nav-buttons{
+    display: flex;
+    list-style-type: none;
+    flex: 0 0 70%;
+    justify-content: space-around;
+}
+
+.nav-button{
+    text-decoration: none;
+    color: #77B0AA;
+    font-size: 1.3em;
+}
+
+.nav-button:hover{
+    color: #E3FEF7;
+    transition: 0.3s;
+}
+
+.heroSection{
+    background-color: #77B0AA;
+    height: 80vh;
+    display: flex;
+    padding: 0px 2em 0px 2em;
+    border-top: 2px solid rgb(17, 43, 37);
+}
+
+.photoFrame{
+    flex: 0 0 40%;
+    height: 100%;
+}
+
+.photoFrame img{
+    height: 100%;
+}
+
+.container{
+    background-color: #135D66;
+    padding: 2em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #E3FEF7;
+    font-size: 18px;
+}
+
+.text{
+    flex: 1 1 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.purple{
+    color: #a8ebe3;
+}
+
+.techStackList{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 1em;
+    width: 450px;
+    justify-content: space-evenly;
+}
+
+.techStackList li{
+    width: auto;
+    height: 80px;
+    background-color: #77B0AA;
+    padding: 12px;
+    border-radius: 25px;
+}
+
+.imgTech{
+    width: 100%;
+    height: 100%;
+}
+
+.aboutMeSection{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 4em 2em 0px 2em;
+    flex-direction: column;
+    background-color: #003C43;
+    border-top: 2px solid rgb(17, 43, 37);
+}
+
+.aboutMeSection h1{
+    color: #E3FEF7;
+    text-align: center;
+    font-size: 40px;
+}
+
+.cardConteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding-top: 2em;
+}
+
+.card{
+    height: 500px;
+    width: 450px;
+    background-color: #135D66;
+    text-align: center;
+    border-radius: 25px;
+    color: #E3FEF7;
+}
+
+.card h2{
+    padding: 0.5em 0px;
+    margin-bottom: 0.3em;
+    font-size: 30px;
+    border-bottom: 2px solid rgb(17, 43, 37);
+}
+
+.interestsList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.interestsList li {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.interestsList img{
+    width: 230px;
+    justify-self: center;
+    align-self: center;
+}
+
+.interestsList > li:first-child{
+    border-bottom: 1px solid #003C43;
+}
+
+.cardList{
+    list-style-type: disc;
+    padding-left: 1.4em;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    justify-content: space-between;
+    height: 400px;
+    gap: 10px;
+    overflow: hidden;
+    text-align: start;
+}
+
+.certificatesList li{
+    width: 500px;
+    border-bottom: 1px solid #003C43;
+}
+
+.projectsSection{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2em 0px 2em;
+    color: #E3FEF7;
+    background-color: #77B0AA;
+    align-items: center;
+}
+
+.headerContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.projectsSection h1{
+    width: 200px;
+    padding: 8px;
+    border-radius: 25px;
+    background-color: #135D66;
+    text-align: center;
+}
