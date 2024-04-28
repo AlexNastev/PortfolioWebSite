@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Craft Byte Nastev</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
                 <a href="#projectsSection" class="nav-button">&lt;PROJECTS/&gt;</a>
             </li>
             <li>
-                <a href="#" class="nav-button">&lt;CONTACT ME/&gt;</a>
+                <a href="#contactMe" class="nav-button">&lt;CONTACT ME/&gt;</a>
             </li>
         </ul>
     </nav>
@@ -124,22 +125,23 @@
         <div class="projectsContainer">
             <div class="project">
                 <h3>Bulgarian Enigma</h3>
-                <div class="carusel">
-                    <img src="/MISC/Projects/Bulgarian Enigma/enigmatab.png" alt="">
-                </div>
-                <div class="projectText">
-                    <h5>Tech-Stack</h5>
-                    <p>C#, Windows Forms</p>
-                    <h5>Info</h5>
-                    <p>This is one of my favourite projects. Me and my friend decided to create software named "Locker", that has multiple feachures such as: Enigma implementation, File locker (XOR based) and a Morse code (Reader/Writer). On my end i implemented the Enigma's algorithm and i added multiple language support such as EN, BG, RU.</p>
-                </div>
-                <a class="projectButton" id="showMore">Show More</a>
-                <a href="https://github.com/AlexNastev/EncryptSoftware" class="projectButton">Check it out on Github</a>
-            </div>
-            <div class="project">
-                <h3>Bulgarian Enigma</h3>
-                <div class="carusel">
-                    <img src="/MISC/Projects/Bulgarian Enigma/enigmatab.png" alt="">
+                <div class="carusel" data-carusel>
+                    <button class="carusel-button prev" data-carusel-button>&#8592;</button>
+                    <button class="carusel-button next" data-carusel-button>&#8594;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="/MISC/Projects/Bulgarian Enigma/enigmatab.png" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="/MISC/Projects/Bulgarian Enigma/homescreen.png" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="/MISC/Projects/Bulgarian Enigma/morse.png" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="/MISC/Projects/Bulgarian Enigma/xortab.png" alt="">
+                        </li>
+                    </ul>
                 </div>
                 <div class="projectText">
                     <h5>Tech-Stack</h5>
@@ -151,6 +153,14 @@
                 <a href="https://github.com/AlexNastev/EncryptSoftware" class="projectButton">Check it out on Github</a>
             </div>
         </div>
+    </section>
+    <section class="contactMe" id="contactMe">
+            <h1>Contact me</h1>
+        <ul class="socials">
+            <li><a href="https://www.linkedin.com/in/alex-nastev-588120264/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/AlexNastev"><i class="fa-brands fa-github"></i> </a></li>
+        </ul>
+        <button class="cvButton">CV</button>
     </section>
     <script src="/JS/script.js"></script>
 </body>
