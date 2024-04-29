@@ -40,3 +40,21 @@ buttons.forEach(button => {
     }
 )
 })
+
+
+//Download CV
+document.querySelector(".cvButton").addEventListener("click", function() {
+    const pdfUrl = "/MISC/Alexs Resume.pdf";
+    
+    // Create an anchor element
+    const a = document.createElement("a");
+
+    // Set the href attribute of the anchor element to the URL of the PDF file
+    a.href = pdfUrl;
+
+    // Set the download attribute of the anchor element to the desired filename
+    a.download = "Alexs Resume.pdf";
+
+    // Simulate a click on the anchor element
+    a.click();
+});
